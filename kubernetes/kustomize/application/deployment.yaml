@@ -23,7 +23,8 @@ spec:
     spec:
       containers:
       - name: example-app
-        image: aimvector/python:1.0.0
+        # image: aimvector/python:1.0.0
+        image: drupal:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000

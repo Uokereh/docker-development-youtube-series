@@ -1,5 +1,7 @@
 # Introduction to Service Monitors
 
+<a href="https://youtu.be/_NtRkBipepg" title="k8s-servicemonitors"><img src="https://i.ytimg.com/vi/_NtRkBipepg/hqdefault.jpg" width="20%" alt="k8s-servicemonitors" /></a> 
+
 In order to understand service monitors, we will need to understand how to monitor 
 kubernetes environment. </br>
 You will need a base understanding of Kubernetes and have a basic understanding of the `kube-prometheus` monitoring stack. </br>
@@ -104,7 +106,7 @@ If it does not appear, that means your Prometheus instance is not selecting the 
 ## Deploy our example app
 
 ```
-kubectl -n default apply -f kubernetes\servicemonitors\example-app\
+kubectl -n default apply -f ./kubernetes/servicemonitors/example-app/
 ```
 
 Now we should see a target in the Prometheus [Targets](http://localhost:9090/targets) page. </br>
